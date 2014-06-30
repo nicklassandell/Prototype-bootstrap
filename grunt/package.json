@@ -1,0 +1,19 @@
+{
+  "name": "ns-ember-demo",
+  "version": "0.1.0",
+  "description": "By Nicklas Sandell",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nicklas Sandell",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-jade": "~0.11.0",
+    "grunt-sass": "~0.14.0",
+    "handlebars": "~1.3.0",
+    "ember-template-compiler": "~1.6.0-beta.5",
+    "grunt-ember-templates": "~0.4.21"
+  }
+}
