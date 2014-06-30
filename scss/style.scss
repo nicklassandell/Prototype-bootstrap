@@ -1,5 +1,11 @@
 @import "bourbon/bourbon";
 
+html {
+	min-height: 100%;
+}
 body {
-	@include border-top-radius(100px);
+	height: 100%;
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 1.3em;
 }
