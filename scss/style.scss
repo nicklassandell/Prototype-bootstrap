@@ -1,2 +1,5 @@
-@import "compass/css3";
 @import "bourbon/bourbon";
+
+body {
+	@include border-top-radius(100px);
+}

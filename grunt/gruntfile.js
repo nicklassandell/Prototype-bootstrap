@@ -9,9 +9,7 @@ module.exports = function(grunt) {
 		 sass: {
 		 	dist: {
 		 		options: {
-			 		output: 'compressed',
-			 		sourceComments: 'map',
-			 		sourceMap: 'sass'
+			 		output: 'compressed'
 			 	},
 		 		files: {
 		 			'../css/style.css': '../scss/style.scss'
@@ -42,18 +40,6 @@ module.exports = function(grunt) {
 			}
 		},
 
-		emberTemplates: {
-			dist: {
-				compile: {
-					amd: true,
-					templateBasePath: '../js/templates/' // Not working?
-				},
-				files: {
-					'../js/templates/compiled.js': '../js/templates/*.hbars'
-				}
-			}
-		},
-
 
 		/**
 		 * File watcher
@@ -78,6 +64,4 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-contrib-jade');
-
-	grunt.loadNpmTasks('grunt-ember-templates');
 };
